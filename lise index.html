@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Touch-Block Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Touch-Block Tetris</h1>
+
+        <div id="game-info">
+            <p>Skor: <span id="score">0</span></p>
+            <p id="game-status">Tekan MULAI</p>
+            <button id="start-button">Mulai Game</button>
+        </div>
+
+        <canvas id="tetrisCanvas"></canvas>
+
+        <div id="touch-controls">
+            <div id="left-right-controls">
+                <button id="move-left" class="control-btn">◀</button>
+                <button id="move-right" class="control-btn">▶</button>
+            </div>
+            <div id="action-controls">
+                <button id="rotate" class="control-btn action-btn">↻</button>
+                <button id="drop" class="control-btn action-btn">⬇</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
